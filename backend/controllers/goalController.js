@@ -2,7 +2,7 @@
 // @route GET /api/goal
 // @access Private
 
-const getGoal = (req, res) => {
+const getGoals = (req, res) => {
   res.status(200).json({ message: "Get goals" });
 };
 
@@ -31,7 +31,7 @@ const deleteGoal = (req, res) => {
 };
 
 module.exports = {
-  getGoal,
+  getGoals,
   setGoal,
   updateGoal,
   deleteGoal,
