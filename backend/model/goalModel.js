@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const goalSchema = mongoose.Schema(
   {
+    // Allows us to have a user associated with a goal
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
