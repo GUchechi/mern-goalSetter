@@ -15,12 +15,12 @@ const loginUser = (req, res) => {
 // @desc    Get user data
 // @route   GET /api/users/me
 // @access  Private
-const getUser = (req, res) => {
-  res.json({ message: "Get User" });
+const getMe = (req, res) => {
+  res.json({ message: "Get User Data Display" });
 };
 
 module.exports = {
   registerUser,
   loginUser,
-  getUser,
+  getMe,
 };
