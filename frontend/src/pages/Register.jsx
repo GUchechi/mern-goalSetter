@@ -24,7 +24,19 @@ const Register = () => {
         <p>Please Create an Account</p>
       </section>
       <section className="form">
-        <form onSubmit={onSubmit}></form>
+        <form onSubmit={onSubmit}>
+          <div className="form-group">
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              name="name"
+              value={name}
+              placeholder="Enter your name"
+              onChange={onChange}
+            />
+          </div>
+        </form>
       </section>
     </>
   );
