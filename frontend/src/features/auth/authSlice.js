@@ -12,6 +12,8 @@ const initialState = {
   message: "",
 };
 
+
+
 export const authSlice = createSlice({
   name: "auth",
   initialState,
@@ -23,4 +25,8 @@ export const authSlice = createSlice({
       state.message = "";
     },
   },
+  extraReducers: () => {},
 });
+
+export const { reset } = authSlice.actions;
+export default authSlice.reducer;
