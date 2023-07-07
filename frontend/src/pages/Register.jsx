@@ -47,6 +47,17 @@ const Register = () => {
               onChange={onChange}
             />
           </div>
+          <div className="form-group">
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              name="password"
+              value={password}
+              placeholder="Enter password"
+              onChange={onChange}
+            />
+          </div>
         </form>
       </section>
     </>
