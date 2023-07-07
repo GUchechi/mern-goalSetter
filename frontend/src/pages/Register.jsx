@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { FaUser } from "react-icons/fa";
 
 const Register = () => {
@@ -8,9 +11,9 @@ const Register = () => {
     password: "",
     confirmPassword: "",
   });
-
   const { name, email, password, confirmPassword } = formData;
 
+  // Onchange
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -18,6 +21,7 @@ const Register = () => {
     }));
   };
 
+  // OnSubmit
   const onSubmit = (e) => {
     e.preventDefault();
   };
