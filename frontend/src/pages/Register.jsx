@@ -1,11 +1,14 @@
-
+import { useState, useEffect } from "react";
 
 const Register = () => {
-  return (
-    <div>
-      Register
-    </div>
-  )
-}
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    password2: "",
+  });
 
-export default Register
+  return <div>Register</div>;
+};
+
+export default Register;
