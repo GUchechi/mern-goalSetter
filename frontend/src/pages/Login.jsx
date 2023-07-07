@@ -42,7 +42,22 @@ const Login = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    const userData = {
+      email,
+      password,
+    };
+
+    dispatch(login(userData));
   };
+
+  if (isLoading) {
+    return <Spinner />;
+  }
+
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <>
