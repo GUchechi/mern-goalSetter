@@ -11,6 +11,10 @@ const Register = () => {
 
   const { name, email, password, confirmPassword } = formData;
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <section className="heading">
@@ -18,6 +22,9 @@ const Register = () => {
           <FaUser /> Register
         </h1>
         <p>Please Create an Account</p>
+      </section>
+      <section className="form">
+        <form onSubmit={onSubmit}></form>
       </section>
     </>
   );
