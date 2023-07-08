@@ -55,10 +55,6 @@ const Login = () => {
     return <Spinner />;
   }
 
-  if (isLoading) {
-    return <Spinner />;
-  }
-
   return (
     <>
       <section className="heading">
