@@ -17,6 +17,6 @@ const createGoal = async (goalData, token) => {
 
 export const goalService = {
   createGoal,
-  // getGoals,
-  // deleteGoal,
 };
+
+export default goalService;

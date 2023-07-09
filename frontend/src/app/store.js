@@ -6,6 +6,6 @@ export const store = configureStore({
   reducer: {
     auth: authReducer,
     goals: goalReducer,
-    devTools: true,
   },
+  devTools: true, // Enable Redux DevTools extension
 });
