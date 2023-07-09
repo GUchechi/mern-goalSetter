@@ -1,6 +1,16 @@
-
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Dashboard = () => {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
+  const { user } = useSelector((state) => state.auth)
+  const { goals, isLoading, isError, message } = useSelector(
+    (state) => state.goals
+  )
+
   return (
     <div>
       Dashboard
