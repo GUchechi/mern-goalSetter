@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import PropTypes from "prop-types";
 import { deleteGoal } from "../features/goals/goalSlice";
 
 const GoalItem = ({ goal }) => {
@@ -13,6 +14,15 @@ const GoalItem = ({ goal }) => {
       </button>
     </div>
   );
+};
+
+// Define prop types for the GoalItem component
+GoalItem.propTypes = {
+  goal: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
+    createdAt: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default GoalItem;
