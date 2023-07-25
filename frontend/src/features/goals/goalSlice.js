@@ -7,7 +7,7 @@ const initialState = {
   isSuccess: false,
   isLoading: false,
   message: "",
-};
+}; 
 
 // Create new goal
 export const createGoal = createAsyncThunk(
