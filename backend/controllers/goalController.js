@@ -67,7 +67,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
     return res.status(400).json({ error: "No such goal" });
   }
 
-  res.status(200).json(deletedGoal);
+  res.status(200).json(deletedGoal); 
 });
 
 module.exports = {
